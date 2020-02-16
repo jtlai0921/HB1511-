@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+</head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Welcome to PeopleBrowser!</span>
+            </h1>
+        </header>
+    <section aria-label="Main content" role="main">
+      <h2>Changing over time</h2>
+      <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource: items.dataSource}">
+      </div>
+      <h2>People</h2>
+      <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource: people.dataSource}">
+      </div>
+      <h2>Sorted by name (asc)</h2>
+      <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource: sortedPeople.dataSource}">
+      </div>
+      <h2>Filtered by age (adults)</h2>
+      <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource: filteredPeople.dataSource}">
+      </div>
+      <h2>Filtered by age (minors) and<br />
+        Sorted by name (asc)</h2>
+      <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource: filteredSortedPeople.dataSource}">
+      </div>
+      <h2>Grouped by age</h2>
+      <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource: groupedPeople.dataSource}">
+      </div>
+      <h2>Template Rendering</h2>
+      <div id="peteDiv"></div>
+      <div>&nbsp;</div>
+      <h2>Grouped by age</h2>
+      <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource: groupedPeople.dataSource, groupDataSource: groupedPeople.groups.dataSource}">
+      </div>
+      <h2>Grouped by age and<br />
+        Sorted by name (desc)</h2>
+      <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource: groupedSortedPeople.dataSource}">
+      </div>
+      <h2>Sorted by name (desc) and<br />
+        Grouped by age</h2>
+      <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource: sortedGroupedPeople.dataSource}">
+      </div>
+      <h2>Fancy Grouped</h2>
+      <div id="headerTemplate" data-win-control="WinJS.Binding.Template">
+        <span data-win-bind="textContent: name"></span>
+      </div>
+      <div id="itemTemplate" data-win-control="WinJS.Binding.Template">
+        <span data-win-bind="style.color: favoriteColor"><span data-win-bind="textContent: name">
+        </span><span>&nbsp;is </span><span data-win-bind="textContent: age"></span><span>&nbsp;years
+          old</span></span>
+      </div>
+      <div id="fancyList" data-win-control="WinJS.UI.ListView" data-win-options="{groupDataSource: fancyGroupedPeople.groups.dataSource, groupHeaderTemplate: select('#headerTemplate'), itemDataSource: fancyGroupedPeople.dataSource, itemTemplate: select('#itemTemplate')}">
+      </div>
+    </section>
+    </div>
+</body>
+</html>

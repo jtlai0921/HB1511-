@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>contacts</title>
+
+  <!-- WinJS references -->
+  <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+  <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+  <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+  <link href="contacts.css" rel="stylesheet" />
+  <script src="contacts.js"></script>
+</head>
+<body>
+  <div class="contacts fragment">
+    <header aria-label="Header content" role="banner">
+      <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+      <h1 class="titlearea win-type-ellipsis">
+        <span class="pagetitle">Welcome to contacts</span>
+      </h1>
+    </header>
+
+    <div data-win-control="WinJS.Binding.Template" id="contactItemTemplate">
+      <div class="contactTemplate">
+        <h2 data-win-bind="innerText: name"></h2>
+        <div data-win-bind="innerText: email"></div>
+        <div data-win-bind="innerText: phone"></div>
+      </div>
+    </div>
+
+    <section aria-label="Main content" role="main">
+      <div id="contactList" data-win-control="WinJS.UI.ListView"
+        data-win-options="{itemDataSource: Data.sampleContacts.dataSource, itemTemplate: select('#contactItemTemplate'), tapBehavior: 'toggleSelect', selectionMode: 'multi' }">
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tile>
+  <visual>
+    <binding template="TileWideText09">
+      <text id="1">New Article</text>
+      <text id="2">Scheduled Tiles are cool!</text>
+    </binding>
+    <binding template="TileSquareText02">
+      <text id="1">New:</text>
+      <text id="2">Scheduled Tiles are cool!</text>
+    </binding>
+  </visual>
+</tile>

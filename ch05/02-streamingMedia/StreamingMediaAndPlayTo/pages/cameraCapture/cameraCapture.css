@@ -1,0 +1,13 @@
+﻿.cameraCapture p {
+    margin-left: 120px;
+}
+
+button {
+	margin: 20px;
+}
+
+#targetImage, #targetVideo {
+	width: 640px;
+	height: 480px;
+	opacity: 0;
+}

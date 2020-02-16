@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>htmlControls</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0.RC/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0.RC/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0.RC/js/ui.js"></script>
+    
+    <link href="htmlControls.css" rel="stylesheet" />
+    <script src="htmlControls.js"></script>
+</head>
+<body>
+    <div class="htmlControls fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">HTML Controls in Metro and IE10</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+          <div class="headeredControl">
+            <h2>Buttons</h2>
+            <button>
+              Push Me!
+            </button>
+            <input type="submit" value="Submit Me!" />
+          </div>
+          <div class="headeredControl">
+            <h2>Input: Checkbox</h2>
+            Cats? <input type="checkbox" value="one" checked="checked" />
+            Dogs? <input type="checkbox" value="two" />
+          </div>
+          <div class="headeredControl">
+            <h2>Input: Radio</h2>
+            Tastes Great! <input type="radio" name="group1" value="one" checked="checked" />
+            Less Filling! <input type="radio" name="group1" value="two" />
+          </div>
+          <div class="headeredControl">
+            <h2>Inputs</h2>
+            Email: <input type="email" placeholder="ex. brandon@kendoui.com" title="Did you know that bees and dogs can smell fear?" /><br /><br />
+            <input type="file" /><br />
+          </div>
+          <div class="headeredControl">
+            <h2>Input: Range</h2>
+            <input type="range" min="0" max="200" value="75" />
+          </div>
+          <div class="headeredControl">
+            <h2>Select</h2>
+            <select>
+              <option value="one" selected="selected">one</option>
+              <option value="two">two</option>
+            </select>
+          </div>
+          <div class="headeredControl">
+            <h2>Select: Multiple</h2>
+            <select multiple="multiple">
+              <option value="one" selected="selected">one</option>
+              <option value="two">two</option>
+              <option value="three">three</option>
+            </select>
+          </div> 
+        </section>
+      <div class="right">
+        <iframe id="plainControls"></iframe>
+      </div>
+  </div>
+       
+</body>
+</html>

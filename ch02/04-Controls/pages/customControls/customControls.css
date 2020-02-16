@@ -1,0 +1,6 @@
+﻿.customControls section[role=main] {
+  margin-left: 120px;
+  display: -ms-grid;
+  -ms-grid-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto;
+}

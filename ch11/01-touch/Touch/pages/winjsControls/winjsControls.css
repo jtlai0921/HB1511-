@@ -1,0 +1,23 @@
+﻿.winjsControls section[role=main] {
+  margin-left: 120px;
+  column-count: 2;
+  width: 100%;
+}
+
+.winjsControls .win-item {
+  width: 200px;
+  height: 40px;
+  padding-left: 5px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .winjsControls section[role=main] {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .winjsControls section[role=main] {
+        margin-left: 100px;
+    }
+}

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Photo_Gallery</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet">
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Photo_Gallery references -->
+    <link href="/css/default.css" rel="stylesheet">
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="headerTemplate" data-win-control="WinJS.Binding.Template">
+       <div class="simpleHeaderItem"> <!-- Class sets color, font-size and weight -->
+            <h2 data-win-bind="innerText: title"></h2>
+        </div>
+    </div>
+
+		<div id="imgTemplate" data-win-control="WinJS.Binding.Template">
+			<figure>
+				<img data-win-bind="src: url" />
+				<figcaption>
+					<span data-win-bind="textContent: caption"></span>
+					<div data-win-control="WinJS.UI.Rating"></div>
+				</figcaption>
+			</figure>
+		</div>
+
+    <div id="zoomTemplate" data-win-control="WinJS.Binding.Template">
+      <div class="zoomItem">
+          <h1 class="zoomItem-Text" data-win-bind="innerText: title"></h1>
+      </div>
+    </div>
+
+    <h1 id="title">Metro Photo Gallery</h1>
+
+    <div id="mainContainer" data-win-control="WinJS.UI.SemanticZoom">
+      <!-- The zoomed-in view. -->    
+      <div id="imgContainer" data-win-control="WinJS.UI.ListView" 
+					  data-win-options="{ itemDataSource: Photos.groupedImages.dataSource, 
+														   itemTemplate: select('#imgTemplate'),      
+                               groupDataSource: Photos.groupedImages.groups.dataSource,
+                               groupHeaderTemplate: select('#headerTemplate'),
+                               layout: {type: WinJS.UI.GridLayout} }">
+
+      </div>
+
+      <!--- The zoomed-out view. -->
+     <div id="categoryContainer" data-win-control="WinJS.UI.ListView" 
+					  data-win-options="{ itemDataSource: Photos.groupedImages.groups.dataSource, 
+														   itemTemplate: select('#zoomTemplate'), 
+                               selectionMode: 'none', tapBehavior: 'invoke', swipeBehavior: 'none' }">
+      </div>
+    </div>
+</body>
+</html>

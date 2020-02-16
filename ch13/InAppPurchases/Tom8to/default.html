@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tom8to</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet">
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    <script src="/MSAdvertisingJS/ads/ad.js"></script>
+
+    <!-- Tom8to references -->
+    <link href="/css/default.css" rel="stylesheet" />
+		<link href="css/font-awesome.css" rel="stylesheet" />
+		
+		<!-- Utility -->
+		<script src="js/observer.js"></script>
+		
+	  <script src="js/timerModel.js"></script>
+		<script src="js/uiController.js"></script>
+    <script src="js/backgroundAudio.js"></script>    
+    <script src="js/share.js"></script>
+  	<script src="/js/default.js"></script>
+  
+    <script src="js/toast.js"></script>
+    <script src="js/lifecycleManager.js"></script>
+</head>
+<body>
+		<header role="banner">
+			<h1 class="win-title">Tom<span class="eight">8</span>to</h1>
+      
+      <!-- ADS SDK -->
+      <div id="adsBlock"></div>
+		</header>
+		<section role="main">
+			<div data-win-control="WinJS.UI.ViewBox">
+					<div class="fixedlayout">
+						<div id="playMain">
+							<div class="icon-play" id="play" title="Start the timer"></div>
+						</div>
+						<div class="countdown hidden">
+						  <div id="timer"></div>
+							<div id="playContainer" class="hidden">
+								<div id="playSmall" class="icon-play med"></div>
+							</div>
+							<div id="pauseContainer">
+								<div id="pause" class="icon-pause med"></div>
+							</div>
+							<div id="reset" class="icon-refresh med"></div>
+						</div>
+					</div>
+			</div>
+  	</section>
+
+		<div><audio id="alarm" msAudioCategory="BackgroundCapableMedia"></audio></div>
+
+		<!-- Duration Flyout -->
+    <div id="changeDuration" data-win-control="WinJS.UI.Flyout" data-win-options="">
+        <h3>Timer Duration</h3>
+        <select id="timerDuration" aria-label="Timer Duration select">
+            <option value="1">1:00</option>
+            <option value="5">5:00</option>
+            <option value="10">10:00</option>
+            <option value="15">15:00</option>
+            <option value="20">20:00</option>
+            <option selected value="25">25:00</option>
+            <option value="30">30:00</option>
+            <option value="35">35:00</option>
+            <option value="40">40:00</option>
+            <option value="45">45:00</option>
+						<option value="50">50:00</option>
+            <option value="55">55:00</option>
+        </select>
+				<br />
+        <button id="resetDuration" title="Reset to the default duration of 25:00">Reset to Default</button>				
+     </div>
+
+    <!-- App Bar -->
+    <div id="appBar" data-win-control="WinJS.UI.AppBar" aria-label="Command Bar"
+        data-win-options="{transient:true,autoHide:0,sticky:false}">
+        <button data-win-control="WinJS.UI.AppBarCommand" id="barReset" disabled data-win-options="{label:'Reset', icon:'refresh', section:'selection', tooltip:'Reset the Timer'}" >
+        </button>
+        <button data-win-control="WinJS.UI.AppBarCommand" id="barCancel" disabled data-win-options="{label:'Cancel', icon:'clear', section:'selection', tooltip:'Cancel the Timer'}">
+        </button>
+				<button data-win-control="WinJS.UI.AppBarCommand" id="barDuration" data-win-options="{label:'Duration', icon:'clock', type:'flyout', flyout:'changeDuration', tooltip:'Change Timer Duration'}"></button>
+    </div>
+</body>
+</html>

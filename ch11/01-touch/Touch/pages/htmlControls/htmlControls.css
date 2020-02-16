@@ -1,0 +1,29 @@
+﻿body {  
+    overflow: scroll;
+}
+
+.htmlControls section[role=main] {
+    margin-left: 120px;
+}
+
+
+.fragment {
+    /* Define a grid with rows for a banner and a body */
+    -ms-grid-columns: 35% 35%;
+}
+
+header {
+  -ms-grid-column-span: 2;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .htmlControls section[role=main] {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .htmlControls section[role=main] {
+        margin-left: 100px;
+    }
+}

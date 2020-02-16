@@ -1,0 +1,10 @@
+﻿.contacts p, #contactList {
+    margin-left: 120px;
+}
+
+.contactTemplate
+{
+  width: 200px;
+  height: 200px;
+  padding: 4px;
+}

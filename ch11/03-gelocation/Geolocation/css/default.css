@@ -1,0 +1,47 @@
+﻿body {
+}
+
+#map {
+   width:100%; 
+    height:100%; 
+    border-color:#0094ff; 
+    background-color:#0094ff; 
+    position:relative;
+}
+
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+
+#main {
+	display: -ms-flexbox;
+	width: 100%;
+	height: 100%;
+	-ms-flex-direction: row;
+}
+
+#mapContainer {
+	width: 50%;
+	height: 100%;
+}
+
+#controls {
+	margin-right: 20px;
+	margin-top: 60px;
+	margin-left: 50px;
+}
+
+#controls span {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0094ff;
+}

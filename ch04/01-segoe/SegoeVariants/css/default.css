@@ -1,0 +1,20 @@
+﻿body {
+	margin-left: 120px;
+	margin-top: 40px;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

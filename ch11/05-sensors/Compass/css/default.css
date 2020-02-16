@@ -1,0 +1,37 @@
+﻿body {
+  margin-top: 30px;
+  margin-left: 120px;
+}
+
+div#compass {
+  text-align: left;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+h3 {
+  color: #0094ff;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+embed {
+  /*background-color: #0094ff;
+  border: 5px solid #808080;*/
+  
+  transition-property: all;
+  transition-duration: 100ms;
+  transition-timing-function: linear;  
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

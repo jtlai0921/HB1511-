@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MultiImagePicker</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- MultiImagePicker references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+</head>
+<body>
+    <div id="imageGalleryTemplate" data-win-control="WinJS.Binding.Template">
+			<div class="imageGallery">
+					<img class="imageGalleryImage" data-win-bind="src: url; title: name"/>
+			</div>
+		</div>
+
+		<header aria-label="Header content" role="banner">
+        <h1 class="titlearea win-type-ellipsis">
+            <span class="pagetitle">Metro Image Gallery</span>
+        </h1>
+    </header>
+		<div class="container">		
+			<div>
+				<button id="pickImages">Pick Images</button>
+			</div>
+			<div id="imageListView" data-win-control="WinJS.UI.ListView" 
+				data-win-options="{ itemDataSource: imageList.dataSource, 
+					itemTemplate: select('#imageGalleryTemplate'),
+					layout: {type: WinJS.UI.GridLayout} }">  
+			</div>
+		</div>
+</body>
+</html>

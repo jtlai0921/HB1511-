@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>winjsControls</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    
+    <link href="winjsControls.css" rel="stylesheet" />
+    <script src="winjsControls.js"></script>
+</head>
+<body>
+    <div class="winjsControls fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Touch Support for WinJS</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+      <div class="headeredControl">
+        <h2>DatePicker</h2>
+        <div data-win-control="WinJS.UI.DatePicker"></div>
+      </div>
+      <div class="headeredControl">
+        <h2>Rating</h2>
+        <div data-win-control="WinJS.UI.Rating"></div>
+      </div>
+      <div class="headeredControl">
+        <h2>TimePicker</h2>
+        <div data-win-control="WinJS.UI.TimePicker"></div>
+      </div>
+      <div class="headeredControl">
+        <h2>ToggleSwitch</h2>
+        <div data-win-control="WinJS.UI.ToggleSwitch" id="toggle"></div>
+      </div>
+      </section>
+    </div>
+</body>
+</html>

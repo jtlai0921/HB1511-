@@ -1,0 +1,87 @@
+﻿/* homePage.css*/
+.homepage section[role=main] {
+  margin-left: 120px;
+  display: -ms-grid;
+  -ms-grid-columns: auto auto;
+  -ms-grid-rows: auto auto auto auto auto;
+}
+
+  .homepage section[role=main] div {
+    margin: 5px;
+    -ms-grid-row-align: center;
+  }
+
+  .homepage section[role=main] input {
+    margin: 5px;
+  }
+
+  .homepage section[role=main] button {
+    margin: 5px;
+  }
+
+.homepage #nameLabel {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+}
+
+.homepage #name {
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+}
+
+.homepage #ageLabel {
+  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+}
+
+.homepage #age {
+  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+}
+
+.homepage #colorLabel {
+  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+}
+
+.homepage #color {
+  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  width: 50px;
+  height: 50px;
+}
+
+.homepage #buttons {
+  -ms-grid-column: 2;
+  -ms-grid-row: 4;
+}
+
+.homepage #birthdayButton::before {
+  font-family: "Segoe UI Symbol";
+  content: "\E121";
+  vertical-align: central;
+}
+
+.homepage #previousButton::before {
+  font-family: "Segoe UI Symbol";
+  content: "\E112";
+  vertical-align: central;
+}
+
+.homepage #nextButton::before {
+  font-family: "Segoe UI Symbol";
+  content: "\E111";
+  vertical-align: central;
+}
+
+@media screen and (-ms-view-state: snapped) {
+  .homepage section[role=main] {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (-ms-view-state: portrait) {
+  .homepage section[role=main] {
+    margin-left: 100px;
+  }
+}

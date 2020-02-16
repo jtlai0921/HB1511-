@@ -1,0 +1,122 @@
+﻿html {
+    cursor: default;
+}
+
+#contenthost {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 133px 1fr 0px;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+    body header[role=banner] {
+        /* Define a grid with columns for the back button and page title. */
+        -ms-grid-columns: 120px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+    }
+
+        body header[role=banner] .titlearea {
+            -ms-grid-column: 2;
+            margin-top: 37px;
+        }
+
+            body header[role=banner] .titlearea .pagetitle {
+                width: calc(100% - 20px);
+            }
+
+    .container {
+        -ms-grid-row: 2;
+				text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+button {
+	margin-bottom: 20px;
+}
+
+#imageListView {
+	margin-left: 120px;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .fragment header[role=banner] {
+        -ms-grid-columns: auto 1fr;
+        margin-left: 20px;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            margin: 0;
+            margin-right: 10px;
+            margin-top: 76px;
+        }
+
+            .fragment header[role=banner] .win-backbutton:disabled {
+                display: none;
+            }
+
+        .fragment header[role=banner] .titlearea {
+            -ms-grid-column: 2;
+            margin-left: 0;
+            margin-top: 68px;
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .fragment header[role=banner] {
+        -ms-grid-columns: 100px 1fr;
+    }
+
+        .fragment header[role=banner] .win-backbutton {
+            margin-left: 29px;
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+
+/* overall list dimensions */
+#imageGallery
+{
+    width: 1024px;
+    height: 578px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* image-gallery - used in Picker gallery */
+/*-------------------------------------------------------------------------------------------*/
+    /* starting margin */
+    #imageGallery .win-horizontal.win-viewport .win-surface
+    {
+        margin: 0px 120px;
+    }
+    
+    /* individual item dimensions */
+    .imageGallery
+    {
+        width: 250px;
+        height: 160px;
+    }
+
+        /* image */
+        .imageGallery img.imageGalleryImage
+        {
+            width: 250px;
+            height: 160px;
+        }

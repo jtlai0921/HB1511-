@@ -1,0 +1,29 @@
+﻿#name {
+  border: 5px dotted #ff6a00;
+  width: 150px;
+  height: 25px;      
+}
+
+.summary {
+  text-decoration: underline;
+}
+
+/*div#myText p {
+  color: blue;
+}*/
+
+a:hover { 
+  font-size: 22pt;   
+}
+
+input[type=text]:disabled { 
+  background-color: #808080;   
+
+} 
+
+ 
+
+div#myText p:not(.first) { font-weight: bold; }
+div#myText p:first-letter { text-transform: uppercase; font-size: 24pt; }
+
+

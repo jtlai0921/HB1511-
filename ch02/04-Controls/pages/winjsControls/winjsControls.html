@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>winjsControls</title>
+
+  <!-- WinJS references -->
+  <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+  <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+  <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+  <link href="winjsControls.css" rel="stylesheet" />
+  <script src="winjsControls.js"></script>
+</head>
+<body>
+  <div class="winjsControls fragment">
+    <header aria-label="Header content" role="banner">
+      <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+      <h1 class="titlearea win-type-ellipsis">
+        <span class="pagetitle">WinJS Controls</span>
+      </h1>
+    </header>
+    <section aria-label="Main content" role="main">
+      <div class="headeredControl">
+        <h2>AppBar</h2>
+        <div>(See the bottom of the screen)</div>
+        <div data-win-control="WinJS.UI.AppBar" aria-label="appbar">
+          <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{label: 'one', icon:'placeholder'}"
+            aria-label="cmd1">
+          </button>
+          <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{label: 'two', icon:'placeholder'}"
+            aria-label="cmd2">
+          </button>
+        </div>
+      </div>
+      <div class="headeredControl">
+        <h2>DatePicker</h2>
+        <div data-win-control="WinJS.UI.DatePicker"></div>
+      </div>
+      <div class="headeredControl">
+        <h2>FlipView</h2>
+        <div data-win-control="WinJS.UI.FlipView" data-win-options="{itemDataSource: items.dataSource}"
+          style="width: 200px; height: 100px">
+        </div>
+      </div>
+      <div class="headeredControl">
+        <h2>Flyout</h2>
+        <div id="flyout" data-win-control="WinJS.UI.Flyout">
+          You can put whatever you like in a flyout.
+        </div>
+        <div id="showFlyout" style="width: 200px;">Click to view flyout.</div>
+      </div>
+      <div class="headeredControl">
+        <h2>ListView</h2>
+        <div data-win-control="WinJS.UI.ListView" style="height: 100px" data-win-options="{selectionMode:'single', tapBehavior:'directSelect', itemDataSource: items.dataSource}">
+        </div>
+      </div>
+      <div class="headeredControl">
+        <h2>ListView: Multiple Selection</h2>
+        <div data-win-control="WinJS.UI.ListView" data-win-options="{selectionMode: 'multi', tapBehavior:'directSelect', itemDataSource: items.dataSource}"
+          style="height: 100px">
+        </div>
+      </div>
+      <div class="headeredControl">
+        <h2>ListView: Grouped</h2>
+        <div id="itemTemplate" data-win-control="WinJS.Binding.Template">
+          <div data-win-bind="innerText: value"></div>
+        </div>
+        <div data-win-control="WinJS.UI.ListView" data-win-options="{groupDataSource: groupedItems.groups.dataSource, itemDataSource: groupedItems.dataSource, itemTemplate: select('#itemTemplate')}"
+          style="height: 100px">
+        </div>
+      </div>
+      <div class="headeredControl">
+        <h2>Rating</h2>
+        <div data-win-control="WinJS.UI.Rating"></div>
+      </div>
+      <div class="headeredControl">
+        <h2>SemanticZoom</h2>
+        <div id="zoomer" data-win-control="WinJS.UI.SemanticZoom" style="height: 100px">
+          <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource: groupedItems.dataSource, itemTemplate: select('#itemTemplate'), groupDataSource: groupedItems.groups.dataSource}"
+            style="height: 100px">
+          </div>
+          <div data-win-control="WinJS.UI.ListView" data-win-options="{itemDataSource: groupedItems.groups.dataSource}"
+            style="height: 100px">
+          </div>
+        </div>
+        <button id="zoomButton">zoom</button>
+      </div>
+      <div class="headeredControl">
+        <h2>TimePicker</h2>
+        <div data-win-control="WinJS.UI.TimePicker"></div>
+      </div>
+      <div class="headeredControl">
+        <h2>ToggleSwitch</h2>
+        <div data-win-control="WinJS.UI.ToggleSwitch" id="toggle"></div>
+      </div>
+      <div class="headeredControl">
+        <h2>Tooltip</h2>
+        <div>Hover over the ToggleSwitch control to see an HTML tooltip.</div>
+      </div>
+      <div class="headeredControl">
+        <h2>ViewBox</h2>
+        <div data-win-control="WinJS.UI.ViewBox" style="width: 100px; height: 100px">
+          <div style="width: 25px; height: 25px; overflow: hidden">hi</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

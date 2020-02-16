@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="890d925d-b961-42cd-9487-73bfe1e14263" Version="1.0.0.0" Publisher="CN=Brandon" />
+  <Properties>
+    <DisplayName>AutoPlay</DisplayName>
+    <PublisherDisplayName>Brandon</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.0</OSMinVersion>
+    <OSMaxVersionTested>6.2.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="AutoPlay" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="AutoPlay" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="images\splashscreen.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.fileTypeAssociation">
+          <FileTypeAssociation Name="image">
+            <SupportedFileTypes>
+              <FileType>.jpg</FileType>
+              <FileType>.png</FileType>
+              <FileType>.gif</FileType>
+            </SupportedFileTypes>
+          </FileTypeAssociation>
+        </Extension>
+        <Extension Category="windows.autoPlayContent">
+          <AutoPlayContent>
+            <LaunchAction Verb="storageDevice" ActionDisplayName="Metro Photo Viewer" ContentEvent="CameraMemoryOnArrival" />
+          </AutoPlayContent>
+        </Extension>
+        <Extension Category="windows.autoPlayDevice">
+          <AutoPlayDevice>
+            <LaunchAction Verb="wpdImage" ActionDisplayName="Metro Photo Viewer" DeviceEvent="WPD\ImageSource" />
+          </AutoPlayDevice>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="removableStorage" />
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

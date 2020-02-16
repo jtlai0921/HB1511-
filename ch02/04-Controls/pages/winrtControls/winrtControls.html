@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>winrtControls</title>
+
+  <!-- WinJS references -->
+  <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+  <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+  <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+  <link href="winrtControls.css" rel="stylesheet" />
+  <script src="winrtControls.js"></script>
+</head>
+<body>
+  <div class="winrtControls fragment">
+    <header aria-label="Header content" role="banner">
+      <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+      <h1 class="titlearea win-type-ellipsis">
+        <span class="pagetitle">WinRT Control</span>
+      </h1>
+    </header>
+    <section aria-label="Main content" role="main">
+      <div class="headeredControl">
+        <h2>MessageBox</h2>
+        <div id="messageboxTarget">Click for message box.</div>
+      </div>
+      <div class="headeredControl">
+        <h2>PopupMenu</h2>
+        <div id="popupmenuTarget">Click for pop-up menu.</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+﻿@font-face {
+  font-family: 'FontAwesome';
+  src: url('/fonts/fontawesome-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	display: -ms-grid;
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 133px 1fr;
+}
+
+header[role=banner] {
+	display: -ms-grid;
+	-ms-grid-columns:  120px 1fr auto;
+	-ms-grid-rows: 133px 1fr;
+}
+
+header h1 {
+	-ms-grid-column: 2;
+  margin-top: 37px;
+}
+
+.eight {
+	color: rgba(149, 17, 17, 0.75);
+	font-weight: 800;
+}
+
+section[role="main"] {
+  -ms-grid-row: 2;
+	
+  display: -ms-flexbox;
+	-ms-flex-align: center;
+  -ms-flex-pack: center;
+  -ms-flex-direction: column;
+    
+	height: 100%;
+  width: 100%;
+}
+
+.fixedlayout {
+  display: -ms-grid;
+  -ms-grid-columns: 1fr;
+  -ms-grid-rows: 1fr;
+}
+
+[class^="icon-"] {
+	font-size: 300pt;
+	color: rgba(149, 17, 17, 0.75);
+	text-align: center;
+	margin: 10px;
+}
+
+.med {
+	font-size: 124pt;
+}
+
+.countdown {
+	display: -ms-flexbox;
+	-ms-flex-flow: wrap;
+	-ms-flex-pack: center;
+}
+
+#playMain {
+	text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+	display:  none;
+	position: relative;
+	z-index:  -1000;
+}
+
+#timer {
+	font-size: 200pt;
+	font-weight: 800;
+	width: 100%;
+	text-align: center;
+}
+
+.red {
+	color: rgba(149, 17, 17, 1);
+}
+
+#playContainer {
+	width:  148px;
+	text-align: right;
+}
+
+.win-header {
+	background-color: rgba(149, 17, 17, 1);
+	color: #fff;
+}
+
+.win-header .win-backbutton {
+	color: #fff;
+	border-color: #fff;
+}
+
+.segoeUI {
+	font-family: 'Segoe UI';
+}
+
+.consolas {
+	font-family: Consolas;
+}
+
+.calibri {
+	font-family: Calibri;
+}
+
+.cambria {
+	font-family: Cambria;
+}
+
+.impact {
+	font-family: Impact;
+}
+
+.gabriola {
+	font-family: Gabriola;
+	-ms-font-feature-settings: "ss07" 1;
+	
+	margin-top: 10%;
+	margin-bottom: -10%;
+	font-size: 500px;
+}
+
+.palatino {
+	font-family: 'Palatino Linotype';
+	-ms-font-feature-settings: "dlig" 1, "lig" 1;
+}
+
+#resetDefault {
+	margin-top: 10px;
+}
+
+#adsBlock {
+  width: 320px;
+  height: 50px;
+  position: absolute;
+  top: 50px;
+  left: 350px;
+}
+
+@-ms-keyframes pulse {
+	from {
+		color: rgba(255, 255, 255, 1);
+	}
+
+	to {
+		color: rgba(149, 17, 17, .75);
+	}
+}
+
+.pulse {
+	-ms-animation-name: pulse;
+	-ms-animation-duration:  .75s;
+	-ms-animation-direction: alternate;
+	-ms-animation-iteration-count: 12;
+	-ms-animation-timing-function: ease-in-out;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+	header[role=banner] {
+		-ms-grid-columns:  10px 1fr auto;
+	}
+
+	header h1 {
+		font-size:  30pt;
+	}
+	
+	[class^="icon-"] {
+		font-size: 172pt;
+	}
+	
+	.med {
+		font-size: 48pt;
+	}
+  
+	#playContainer {
+		width:  52pt;
+	}
+
+	#timer {
+		font-size: 72pt;
+	}
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+	header[role=banner] {
+		-ms-grid-columns:  100px 1fr auto;
+	}
+	
+	#timer {
+		font-size: 184pt;
+	}
+}
+
+@media screen and (min-width: 1367px) and (min-height: 767px) {
+	[class^="icon-"] {
+		font-size: 500pt;
+	}
+	
+	.med {
+		font-size: 200pt;
+	}
+	
+	#playContainer {
+		width:  225px;
+		text-align: right;
+	}
+	
+	#timer {
+		font-size: 300pt;
+	}
+}
+
+@media screen and (min-width: 2500px) and (min-height: 1400px) {
+	[class^="icon-"] {
+		font-size: 700pt;
+	}
+	
+	.med {
+		font-size: 300pt;
+	}
+	
+	#playContainer {
+		width:  328px;
+		text-align: right;
+	}
+	
+	#timer {
+		font-size: 400pt;
+	}
+}

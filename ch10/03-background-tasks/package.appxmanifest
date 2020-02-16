@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="eba6cf98-43a7-4d2d-867b-f6cac1dfd329" Version="1.0.0.0" Publisher="CN=csells" />
+  <Properties>
+    <DisplayName>RssReader</DisplayName>
+    <PublisherDisplayName>csells</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.0</OSMinVersion>
+    <OSMaxVersionTested>6.2.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="RssReader" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="RssReader" ForegroundText="light" BackgroundColor="#464646">
+        <LockScreen Notification="badge" BadgeLogo="images\badge.png" />
+        <DefaultTile ShowName="allLogos" WideLogo="images\widelogo.png" />
+        <SplashScreen Image="images\splashscreen.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" StartPage="js\backgroundtask.js">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />
+            <Task Type="timer" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

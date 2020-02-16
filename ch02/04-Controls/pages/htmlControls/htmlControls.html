@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>htmlControls</title>
+
+  <!-- WinJS references -->
+  <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+  <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+  <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+  <link href="htmlControls.css" rel="stylesheet" />
+  <script src="htmlControls.js"></script>
+</head>
+<body>
+  <div class="htmlControls fragment">
+    <header aria-label="Header content" role="banner">
+      <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+      <h1 class="titlearea win-type-ellipsis">
+        <span class="pagetitle">HTML Controls</span>
+      </h1>
+    </header>
+    <section aria-label="Main content" role="main">
+      <div class="headeredControl">
+        <h2>A: Hyperlink</h2>
+        <a href="http://microsoft.com">microsoft.com</a>
+      </div>
+      <div class="headeredControl">
+        <h2>Audio</h2>
+        <audio src="http://kraigbrockschmidt.com/downloads/media/SpringyBoing.mp3" controls="controls"
+          style="width: 250px;">
+        </audio>
+      </div>
+      <div class="headeredControl">
+        <h2>Button</h2>
+        <button>
+          Push Me!
+        </button>
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Button</h2>
+        <input accesskey="P" type="button" value="Push Me!" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Reset</h2>
+        <input type="reset" value="Reset Me!" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Submit</h2>
+        <input type="submit" value="Submit Me!" />
+      </div>
+      <div class="headeredControl">
+        <h2>Canvas</h2>
+        <canvas id="canvas1" width="100" height="100"></canvas>
+      </div>
+      <div class="headeredControl">
+        <h2>SVG (Scalable Vector Graphics)</h2>
+        <svg width="100" height="100">
+          <defs>
+            <lineargradient id="black_red" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color: black; stop-opacity: 1" />
+              <stop offset="100%" style="stop-color: red; stop-opacity: 1" />
+            </lineargradient>
+          </defs>
+          <rect width="100" height="100" style="fill: url(#black_red)" />
+        </svg>
+      </div>
+      <div class="headeredControl">
+        <h2>IFrame</h2>
+        <iframe src="http://sellsbrothers.com" style="width: 250px; height: 100px"></iframe>
+      </div>
+      <div class="headeredControl">
+        <h2>Image</h2>
+        <img src="http://www.telerik.com/assets/img/sitenav/telerik-logo.gif" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Checkbox</h2>
+        <input type="checkbox" value="one" checked="checked" />
+        <input type="checkbox" value="two" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Radio</h2>
+        <input type="radio" name="group1" value="one" checked="checked" />
+        <input type="radio" name="group1" value="two" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Email</h2>
+        <input type="email" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: File</h2>
+        <input type="file" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Number</h2>
+        <input type="number" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Password</h2>
+        <input type="password" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Tel</h2>
+        <input type="tel" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Search</h2>
+        <input type="search" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Text</h2>
+        <input type="text" />
+      </div>
+      <div class="headeredControl">
+        <h2>Input: URL</h2>
+        <input type="url" />
+      </div>
+      <div class="headeredControl">
+        <h2>Label</h2>
+        <label for="span1">
+          a label
+        </label>
+        <span id="span1" style="color: #0026ff">for this</span>
+      </div>
+      <div class="headeredControl">
+        <h2>Input: Range</h2>
+        <input type="range" min="0" max="100" value="75" />
+      </div>
+      <div class="headeredControl">
+        <h2>Progress (Determinate)</h2>
+        <progress style="width: 100px; height: 10px;" value="75" max="100"></progress>
+      </div>
+      <div class="headeredControl">
+        <h2>Progress (Indeterminate)</h2>
+        <progress style="width: 100px; height: 10px;"></progress>
+      </div>
+      <div class="headeredControl">
+        <h2>Progress (Ring)</h2>
+        <progress style="width: 20px; height: 20px;"></progress>
+      </div>
+      <div class="headeredControl">
+        <h2>(Rich Text Editor)</h2>
+        <div contenteditable="true" style="background-color: White; color: Black; width: 250px; height: 100px; border: 1px solid black;">
+        </div>
+      </div>
+      <div class="headeredControl">
+        <h2>Select</h2>
+        <select>
+          <option value="one" selected="selected">one</option>
+          <option value="two">two</option>
+        </select>
+      </div>
+      <div class="headeredControl">
+        <h2>Select: Multiple</h2>
+        <select multiple="multiple">
+          <option value="one" selected="selected">one</option>
+          <option value="two">two</option>
+        </select>
+      </div>
+      <div class="headeredControl">
+        <h2>TextArea</h2>
+        <textarea></textarea>
+      </div>
+      <div class="headeredControl">
+        <h2>(Tooltip: Simple)</h2>
+        <div title="A simple tooltip">
+          Hover to see the tooltip.
+        </div>
+      </div>
+      <div class="headeredControl">
+        <h2>Video</h2>
+        <video src="http://html5demos.com/assets/dizzy.mp4" controls="controls"
+          style="width: 250px;">
+        </video>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

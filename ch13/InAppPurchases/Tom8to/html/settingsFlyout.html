@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+      <title>App Settings Flyout</title>
+			<script src="../js/settingsFlyout.js"></script>
+    </head>
+    <body>
+      <div id="optionsTemplate" data-win-control="WinJS.Binding.Template">
+        <option data-win-bind="value: value; innerText: name; selected: selected"></option>
+      </div>
+
+			<div id="settingsDiv" data-win-control="WinJS.UI.SettingsFlyout" aria-label="App Settings Flyout" data-win-options="">
+          <div class="win-header">
+              <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+              <div class="win-label">Settings</div>
+              <img src="../images/smallTile.png" style="position: absolute; right: 40px;"/>
+          </div>
+          <div class="win-content">
+              <br />
+							<h3>Tom8to App Settings</h3>
+              <div>These settings allow you to control the font and alarm sounds for this app.</div>
+              <div>
+								<br />
+                <h3>Alarm Sound</h3>
+                <select id="alarmSound" aria-label="Alarm select control"></select>
+              </div>
+              <div>
+                <br />  
+								<h3>Alarm Font</h3>
+                 <select id="alarmFont" aria-label="Alarm font control"></select>
+              </div>
+							<div>
+								<br />
+								<button id="resetDefaults">Reset Defaults</button>
+							</div>          
+              <div>
+                <br />
+                <h3>Buy Add-ons</h3>
+                <p><button id="buyAlarmPack">Alarm Pack</button></p>
+                <p><button id="buyFontPack">Font Pack</button></p>
+              </div>                      
+          </div>
+      </div>
+    </body>
+</html>

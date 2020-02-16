@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<!-- settings/feeds/feeds.html -->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>feeds</title>
+
+  <!-- WinJS references -->
+  <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+  <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+  <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+  <link href="feeds.css" rel="stylesheet" />
+  <script src="feeds.js"></script>
+</head>
+<body>
+  <div class="feeds fragment">
+    <div id="feedsFlyout" data-win-control="WinJS.UI.SettingsFlyout">
+      <div class="win-ui-dark win-header">
+        <button onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+        <div class="win-label">Feeds</div>
+      </div>
+      <div class="win-content">
+        <div class="win-settings-section">
+          <h3>Feeds</h3>
+          <div><label for="feed1enabled"><input id="feed1enabled" type="checkbox" />Brandon Satrom</label></div>
+          <div><label for="feed2enabled"><input id="feed2enabled" type="checkbox" />Chris Sells</label></div>
+          <div><label for="feed3enabled"><input id="feed3enabled" type="checkbox" />Channel9</label></div>
+        </div>
+        <div class="win-settings-section">
+          <h3>Notifications</h3>
+          <div id="showNotifications" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{title: 'Enable notifications'}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

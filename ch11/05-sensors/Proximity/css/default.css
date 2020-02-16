@@ -1,0 +1,22 @@
+﻿body {
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+#chat {
+  color: #0094ff;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

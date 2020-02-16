@@ -1,0 +1,16 @@
+﻿.scriptedVideo p {
+    margin-left: 120px;
+}
+
+.homepage section[role=main].center {
+    margin-left: 0px;
+}
+
+#adjustVolume {
+	margin-left: 15px;
+}
+
+#currentVolume {
+	font-size: x-large;
+	font-weight: 800;
+}

@@ -1,0 +1,55 @@
+﻿body {
+	margin-top: 20px;
+	margin-left: 20px;
+	
+	display: -ms-box; 
+	-ms-box-orient: vertical; 
+	-ms-box-pack: center; 
+	-ms-box-align: middle; 
+	-ms-box-lines: multiple; 
+	overflow-x: scroll;
+}
+
+article.font {
+	border: 5px solid #BBB3B3;
+	margin-top: 40px;
+	margin-right: 5px;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+#calibri {
+	font-family: Calibri;
+}
+
+#gabriola {
+	font-family: Gabriola;
+	font-size: 44pt;
+}
+
+#segoe {
+}
+
+#palatino {
+	font-family: 'Palatino Linotype';
+}
+
+#calibri .feature {
+	-ms-font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+#gabriola .feature {
+	-ms-font-feature-settings: "ss07" 1;
+}
+
+#segoe .feature {
+	-ms-font-feature-settings: "ss01" 1, "smcp" 1, "frac" 1;
+}
+
+#palatino .feature {
+	-ms-font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+#palatino, #calibri, #segoe {
+	font-size: 32pt;
+}

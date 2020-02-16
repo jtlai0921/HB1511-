@@ -1,0 +1,38 @@
+﻿.homepage section[role=main] {
+  margin-left: 120px;
+  display: -ms-grid;
+  -ms-grid-rows: auto auto;
+  -ms-grid-columns: auto auto auto;
+}
+
+@media screen and (-ms-view-state: snapped) {
+  .homepage section[role=main] {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (-ms-view-state: portrait) {
+  .homepage section[role=main] {
+    margin-left: 100px;
+  }
+}
+
+#mapFrame {
+  width: 750px;
+  height: 500px;
+  -ms-grid-column-span: 3;
+}
+
+#portlandButton {
+  -ms-grid-row: 2;
+}
+
+#bostonButton {
+  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+}
+
+#sofiaButton {
+  -ms-grid-column: 3;
+  -ms-grid-row: 2;
+}

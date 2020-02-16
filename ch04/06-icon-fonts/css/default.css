@@ -1,0 +1,128 @@
+﻿@font-face {
+	font-family: 'Heydings';
+	src: url('/fonts/heydings_icons-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Font-Awesome';
+	src: url('/fonts/fontawesome-webfont.woff') format('woff');
+}
+
+body {
+	display: -ms-grid;
+	-ms-grid-columns: 69fr 14fr 1206fr 20fr 57fr; 
+	-ms-grid-rows: 75fr 14fr 679fr;
+}
+
+header {
+	-ms-grid-column: 3;
+	-ms-grid-row: 1;
+	color: #6B8DD4;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+[role="main"] {
+	-ms-grid-column: 3;
+	-ms-grid-row: 3;
+	display: -ms-flexbox;
+    -ms-flex-direction: row;
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	-ms-flex-wrap: wrap;
+}
+
+.fontDisplay {
+	background-color: #877777;
+	color: #F7F3F3;
+	border-radius: 10px;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 20px;
+}
+
+.fontDisplay:before {
+	font-size: 96pt;
+	font-family: Heydings;
+	color: #F3F3F3;
+	width: 100%;
+	display: block;
+}
+
+.fontDisplay#one:before,
+.fontDisplay#two:before,
+.fontDisplay#three:before {
+	content: '!';
+}
+
+.fontDisplay#two:before {
+	font-size: 120pt;
+}
+
+.fontDisplay#three:before {
+	-ms-transform: scale(.5);
+}
+
+.fontDisplay#two {
+	height:  250px;
+}
+
+.fontDisplay#four:before {
+	content: '8';
+	color:  #ad0a0a;
+}
+
+.fontDisplay#five:before {
+	content: 't';
+	text-shadow: 20px 12px 2px #222;
+}
+
+.fontDisplay#six:before {
+	content: 'u';
+	-ms-transform:  skew(-55deg);
+}
+
+.fontDisplay#seven:before {
+	content: '2';
+	-ms-transition: all 1000ms ease-in-out;
+}
+
+.fontDisplay#seven:hover:before {
+	-ms-transform: rotate(180deg);
+}
+
+@keyframes slide {  
+    from {
+        -ms-transform: translateX(10px);
+    }
+    
+    50% {
+        color: #ad0a0a;
+    }
+
+    to {  
+      -ms-transform: translateX(550px);
+    }    
+}
+
+.fontDisplay#eight:before {
+	content: 'y';
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	
+	 -ms-animation-duration: 3s;  
+   -ms-animation-name: slide;
+	 -ms-animation-direction: alternate;
+	 -ms-animation-iteration-count: infinite;
+	 -ms-animation-timing-function: ease-in-out;
+}  
+
+.fontDisplay#eight {
+	width:  685px;
+}

@@ -1,0 +1,4 @@
+﻿.htmlControls section[role=main] {
+  margin-left: 20px;
+  column-count: 4;
+}

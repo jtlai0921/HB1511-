@@ -1,0 +1,10 @@
+﻿.winjsControls section[role=main] {
+  margin-left: 20px;
+  column-count: 2;
+}
+
+.winjsControls .win-item {
+  width: 100px;
+  height: 40px;
+  padding-left: 5px;
+}

@@ -1,0 +1,91 @@
+﻿body {
+	overflow-x: scroll; /* bottom scrollbar */
+	display: -ms-grid;
+	-ms-grid-columns: 120px 1fr;
+	-ms-grid-rows: 133px 1fr;
+}
+
+h1#title {
+	-ms-grid-column: 2;
+	margin-top: 37px;
+}
+
+#imgContainer {
+	-ms-grid-column: 2;
+	-ms-grid-row: 2;
+	
+	display:  -ms-flexbox;
+    -ms-flex-direction: row;
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+}
+
+figure {
+	width: 700px;
+	height: 450px;
+	
+	display: inline-block;
+	background-color: rgba(120, 120, 120, 0.5);
+}
+
+/* Styles for elements inside of the .galImg container. */
+img {
+	width: 60%;
+	height: 80%;
+	margin: 10px 0px 0px 10px;
+}
+
+figcaption {
+	font-size: 16pt;
+	width:  33%;
+	height:  25%;
+	margin: 10px 20px 0px 0px;
+	
+	float: right;
+	text-align: left;
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+	body {		
+		-ms-grid-columns: 100px 1fr;
+		overflow-y: scroll;
+	}
+	
+	#imgContainer {
+		-ms-flex-direction: column;
+		-ms-flex-pack: start;
+	}
+	
+	figure {
+		width: 525px; /* Original size: 700px */
+		height: 350px; /* Original size: 450px */
+	}
+}
+
+@media all and (-ms-view-state: snapped) { 
+	body {		
+		-ms-grid-columns: auto 1fr;
+	}
+	
+	img {
+		width: 80%;
+		height: 60%;
+	}	
+	
+	#imgContainer {
+		margin-right: 20px;
+	}
+	
+	figure {
+		width: 260px; /* Original size: 700px */
+		height: 225px; /* Original size: 450px */
+	}
+	
+	figcaption {
+		font-size: 12pt;
+		width:  100%;
+		height:  25%;
+		margin: 10px 20px 0px 10px;
+		float: none;
+	}
+}

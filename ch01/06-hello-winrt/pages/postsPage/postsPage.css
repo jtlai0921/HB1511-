@@ -1,0 +1,19 @@
+﻿.postsPage section[role=main] {
+  margin-left: 120px;
+  overflow-y: scroll;
+  width: calc(100% - 120px);
+  height: calc(100% - 20px);
+}
+
+.postsPage h2 {
+  font-weight: bold;
+}
+
+.postsPage .postTitle {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.postsPage .postDate {
+  font-style: italic;
+}

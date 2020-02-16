@@ -1,0 +1,36 @@
+﻿.circles h3 {
+    margin-left: 133px;
+}
+
+#examples {
+	display: -ms-grid;
+	-ms-grid-columns: 133px 1fr 1fr;
+}
+
+#examples h2 {
+	text-align: center;
+	margin-top: 10px;	
+}
+
+#svg, #canvas {
+	background-color: #6B8DD4;	margin: 20px;	border-radius: 10px;	color: #fff;	box-shadow: -10px -10px 8px #7b7978;
+	width: 450px;
+	height: 450px;
+}
+
+#svg {
+	-ms-grid-column: 2;
+}
+
+#canvas {
+	-ms-grid-column: 3;
+}
+
+svg#circle {
+	/* background-color: azure; */
+}
+
+svg#circle ellipse {
+	stroke-width: 20px;
+	stroke: #AAA;
+} 

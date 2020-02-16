@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>circles</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="circles.css" rel="stylesheet" />
+    <script src="circles.js"></script>
+</head>
+<body>
+    <div class="circles fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Circles in SVG and Canvas</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <h3>The following examples illustrate creating and animating circles using Canvas and SVG</h3>
+            <div id="examples" >
+							<div id="svg" >
+								<h2>SVG</h2>
+								<svg version="1.1" width="400" height="400" id="circle">
+									<defs>
+										<radialGradient id="circleGrad">
+											<stop offset="0%" stop-color="rgb(255, 255, 255)" />
+											<stop offset="50%" stop-color="rgb(140, 140, 140)" />
+											<stop offset="100%" stop-color="rgb(55, 55, 55)" />
+										</radialGradient>
+									</defs>
+
+									<ellipse fill="url(#circleGrad)" stroke="#DDD" cx="55%" cy="55%" rx="35%" ry="35%" />
+								</svg>
+							</div>
+							<div id="canvas">
+								<h2>Canvas</h2>
+								<canvas id="circleCanvas" width="400" height="400"></canvas>
+							</div>
+						</div>
+        </section>
+    </div>
+</body>
+</html>

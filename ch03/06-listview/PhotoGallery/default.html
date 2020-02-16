@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Photo_Gallery</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet">
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Photo_Gallery references -->
+    <link href="/css/default.css" rel="stylesheet">
+    <script src="/js/default.js"></script>
+</head>
+<body>
+		<div id="imgTemplate" data-win-control="WinJS.Binding.Template">
+			<figure>
+				<img data-win-bind="src: url" />
+				<figcaption>
+					<span data-win-bind="textContent: caption"></span>
+					<div data-win-control="WinJS.UI.Rating"></div>
+				</figcaption>
+			</figure>
+		</div>
+
+    <h1 id="title">Win8 Photo Gallery</h1>
+		<div id="imgContainer" data-win-control="WinJS.UI.ListView" 
+					data-win-options="{itemDataSource: Photos.imageList.dataSource, 
+														 itemTemplate: select('#imgTemplate')}"></div>
+</body>
+</html>

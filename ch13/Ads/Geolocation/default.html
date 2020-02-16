@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Geolocation Sample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Geolocation references -->
+    <script type="text/javascript" src="/Bing.Maps.JavaScript/js/veapicore.js"></script>
+    <script type="text/javascript" src="/Bing.Maps.JavaScript/js/veapiModules.js"></script>    
+    <script type="text/javascript" src="/MSAdvertisingJS/ads/ad.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="main">
+      <div id="controls">
+        <h2>Geolocation</h2>
+        <p>Latitude: <span id="latitude"></span></p>
+        <p>Longitude: <span id="longitude"> </span></p>
+        <p>Accuracy (in meters): <span id="accuracy"></span></p>
+    
+        <p><input type="button" id="WinLoc" value="Get Location" /></p>
+
+        <div id="imageAd" data-win-control="MicrosoftNSJS.Advertising.AdControl" 
+             data-win-options="{applicationId: 'test_client', adUnitId: 'Image_160x600'}">
+        </div>
+      </div>
+      <div id="mapContainer">
+        <div id="map"></div>
+      </div>
+    </div>
+</body>
+</html>

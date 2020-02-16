@@ -1,0 +1,34 @@
+﻿.postsPage section[role=main] {
+  margin-left: 120px;
+  overflow-y: scroll;
+  width: calc(100% - 120px);
+  height: calc(100% - 20px);
+	
+    font-family: Cambria;
+}
+
+.postsPage h2 {
+  font-weight: bold;
+}
+
+.postsPage .postTitle {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.postsPage .postDate {
+  font-style: italic;
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .postsPage section[role=main] {
+        margin-left: 20px;
+        width: calc(100% - 20px);
+    }
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .postsPage section[role=main] {
+        margin-left: 100px;
+    }
+}

@@ -1,0 +1,26 @@
+﻿body {
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+
+#main {
+	margin: 10px 40px;
+}
+
+#email {
+	width: 600px;
+	height: 305px;
+	font-family: Calibri;
+	font-size: 24pt;
+	padding: 5px;
+}

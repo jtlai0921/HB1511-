@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Geolocation Sample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Geolocation references -->
+    <script type="text/javascript" src="/Bing.Maps.JavaScript/js/veapicore.js"></script>
+    <script type="text/javascript" src="/Bing.Maps.JavaScript/js/veapiModules.js"></script>
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="main">
+      <div id="controls">
+        <h2>Geolocation</h2>
+        <p>Latitude: <span id="latitude"></span></p>
+        <p>Longitude: <span id="longitude"> </span></p>
+        <p>Accuracy (in meters): <span id="accuracy"></span></p>
+        <p>Location Status: <span id="status"> </span></p>
+    
+        <p><input type="button" id="HTML5Loc" value="Get Location by Navigator"  /></p>
+        <p><input type="button" id="WinLoc" value="Get Location by WinRT" /></p>
+      </div>
+      <div id="mapContainer">
+        <div id="map"></div>
+      </div>
+    </div>
+</body>
+</html>

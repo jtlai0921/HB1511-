@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity
+    Name="a8c906d0-f878-4bd4-b727-5363ce0bfb52"
+    Version="1.0.0.0"
+    Publisher="CN=csells" />
+  <Properties>
+    <DisplayName>hello</DisplayName>
+    <PublisherDisplayName>csells</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-US" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements
+        DisplayName="hello"
+        Logo="images\logo.png"
+        SmallLogo="images\smalllogo.png"
+        Description="hello"
+        ForegroundText="light"
+        BackgroundColor="#000000">
+        <SplashScreen Image="images\splashscreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>

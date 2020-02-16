@@ -1,0 +1,14 @@
+﻿.styledVideo p {
+    margin-left: 120px;
+}
+
+#styleVid {
+	-ms-transform: rotate(-10deg);
+	box-shadow: 20px 20px 15px #AAA;
+	border-radius: 20px;
+}
+
+#watermark {
+	position: relative;
+	margin-top: 10%;
+}
